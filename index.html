@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Naman Sahai — XR & SDE Portfolio</title>
+  <meta name="description" content="Naman Sahai — XR Developer & SDE. Meta Quest prototypes, VFX, VR, data & cloud projects." />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="background-layer" aria-hidden="true">
+    <canvas id="bg-canvas"></canvas>
+    <div class="orb orb--teal" aria-hidden="true"></div>
+    <div class="orb orb--magenta" aria-hidden="true"></div>
+    <div class="orb orb--yellow" aria-hidden="true"></div>
+    <div class="bg-diagonal" aria-hidden="true"></div>
+  </div>
+
+  <header class="topbar" role="banner">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#home" aria-label="Home — Naman Sahai">
+        <span class="brand-mark">NS</span>
+        <span class="brand-name">Naman Sahai</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <ul id="navList" class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="actions">
+        <a class="btn resume" href="PortfolioResume_Naman_Sahai.pdf" download>Resume</a>
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="home" class="hero section">
+      <div class="wrap hero-inner">
+        <div class="hero-left">
+          <p class="eyebrow">XR Developer • Software Engineer</p>
+          <h1 class="headline">
+            I build <span class="glow">immersive XR</span> experiences and reliable backend systems 
+            <span class="name-animate">Naman Sahai</span>
+          </h1>
+          <p class="lead">
+            A Computer Science student, software developer, and XR enthusiast from Jodhpur. I enjoy solving problems through 
+            code while also creating immersive worlds in Unity and Unreal. From clean logic to shaders, VFX, and lighting, I like blending software engineering with creativity 
+            to build experiences that feel both smart and engaging.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">See Work</a>
+            <a class="btn btn-outline" href="#contact">Let’s Talk</a>
+          </div>
+
+          <ul class="contact-mini">
+            <li><strong>Email:</strong> <a href="mailto:work.namansahai@gmail.com">work.namansahai@gmail.com</a></li>
+            <li><strong>Location:</strong> Jodhpur, India</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/NamanSahai" target="_blank" rel="noopener">github.com/NamanSahai</a></li>
+          </ul>
+        </div>
+        
+        <div class="hero-right">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="num">5+</div>
+              <div class="label">Major XR Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">3</div>
+              <div class="label">SDE / Data Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">SIH'23</div>
+              <div class="label">Winner • Team</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">Two tracks: <strong>XR</strong> and <strong>SDE / Data</strong>. Click cards to open a full case view.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Project tracks">
+          <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-xr" id="tab-xr" data-target="xr">XR Projects</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="panel-sde" id="tab-sde" data-target="sde">SDE / Data</button>
+        </div>
+
+        <div class="tab-panels">
+          <div id="panel-xr" class="panel active" role="tabpanel" aria-labelledby="tab-xr">
+            <div class="projects-grid">
+
+              <article class="project-card xr" tabindex="0"
+              data-title="Meta Quest 3 — QR Tracking"
+              data-tags="Meta XR SDK • ZXing • Unity • Passthrough"
+              data-desc="Research prototype for Meta Quest 3 using passthrough camera and QR anchors. Implemented anchor persistence, raycast interaction overlays and URP optimizations to maintain target framerates."
+              data-images="Project_images/QR_1.png,Project_images/QR_2.png,Project_images/QR_3.png"
+              data-github="https://github.com/NamanSahai/QR-Scan"> <figure class="thumb">
+              <div class="image-slider">
+                <img alt="Meta Quest 3 QR Tracking" loading="lazy" src="Project_images/QR_1.png">
+              </div>
+    </figure>
+    <div class="card-content">
+        <h3>Meta Quest 3 — QR Tracking</h3>
+        <p class="short">Anchored 3D objects in passthrough using Meta XR SDK - anchor stability & performance tuned.</p>
+        <div class="card-actions">
+            <button class="btn btn-sm detail">Details</button>
+            <a class="btn btn-sm btn-secondary" href="https://github.com/NamanSahai/QR-Scan" target="_blank" rel="noopener">GitHub</a> </div>
+    </div>
+</article>
+
+              <article class="project-card xr" tabindex="0"
+                       data-title="AR Billboard Demo"
+                       data-tags="Unity • AR Foundation • CDN"
+                       data-desc="Dynamic billboard system using AR Foundation to surface contextual ads. Implemented runtime content injection, occlusion heuristics and a lightweight CDN sync pipeline for content updates."
+                       data-images="Project_images/AR_1.jpeg,Project_images/AR_2.jpeg,Project_images/AR_3.jpeg,Project_images/AR_4.jpeg">
+                <figure class="thumb">
+                  <div class="image-slider">
+                    <img alt="AR Billboard Demo" loading="lazy" src="Project_images/AR_1.jpeg">
+                  </div>
+                </figure>
+                <div class="card-content">
+                  <h3>AR Billboard Demo</h3>
+                  <p class="short">AR Foundation pipeline for dynamic, anchored digital billboards with remote updates.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-sm detail">Details</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card xr" tabindex="0"
+                       data-title="VFX PARTICLE SYSTEM & VFX GRAPH"
+                       data-tags="Unity • VFX Graph • GPU"
+                       data-desc="Generative mandala and particle systems authored in Unity VFX Graph. Emphasized GPU-driven performance and artist-facing parameters for runtime control."
+                       data-images="Project_images/FIRE_1.png,Project_images/MANDALA_1.png,Project_images/FIRE_2.png,Project_images/PARTICLE_1.png,Project_images/FIRE_3.png,Project_images/FIRE_4.png">
+                <figure class="thumb">
+                  <div class="image-slider">
+                    <img alt="Particle & Mandala VFX" loading="lazy" src="Project_images/FIRE_1.png">
+                  </div>
+                </figure>
+                <div class="card-content">
+                  <h3>VFX PARTICLE SYSTEM & VFX GRAPH</h3>
+                  <p class="short">Unity VFX Graph experiments - mandala generation, particle throw mechanics.</p>
+                  <div class="card-actions"><button class="btn btn-sm detail">Details</button></div>
+                </div>
+              </article>
+
+              <article class="project-card xr" tabindex="0"
+                       data-title="VR Museum"
+                       data-tags="Unreal • Reality Capture • LOD"
+                       data-desc="Virtual museum built using Reality Capture + Unreal. Optimized LODs, lighting & streaming to preserve high-fidelity while maintaining interactive framerates."
+                       data-images="Project_images/MUSEUM_1.jpeg,Project_images/MUSEUM_2.jpeg,Project_images/MUSEUM_3.png,Project_images/MUSEUM_4.jpeg">
+                <figure class="thumb">
+                  <div class="image-slider">
+                    <img alt="VR Museum" loading="lazy" src="Project_images/MUSEUM_1.jpeg">
+                  </div>
+                </figure>
+                <div class="card-content">
+                  <h3>VR Museum</h3>
+                  <p class="short">Reality Capture + Unreal pipeline for immersive museum exhibits.</p>
+                  <div class="card-actions"><button class="btn btn-sm detail">Details</button></div>
+                </div>
+              </article>
+
+              <article class="project-card xr" tabindex="0"
+                       data-title="VR Movie"
+                       data-tags="Unreal • Premiere Pro • Cinematic"
+                       data-desc="Cinematic VR short created with Unreal and edited in Premiere. Focus on spatial audio, pacing, and real-time rendered sequences for immersive storytelling."
+                       data-images="Project_images/MOVIE_1.JPG,Project_images/MOVIE_2.JPG,Project_images/MOVIE_3.JPG,Project_images/MOVIE_4.JPG,Project_images/MOVIE_5.JPG">
+                <figure class="thumb">
+                  <div class="image-slider">
+                    <img alt="VR Movie" loading="lazy" src="Project_images/MOVIE_1.JPG,Project_images/MOVIE_2.JPG,Project_images/MOVIE_3.JPG,Project_images/MOVIE_4.JPG,Project_images/MOVIE_5.JPG">
+                  </div>
+                </figure>
+                <div class="card-content">
+                  <h3>VR Movie</h3>
+                  <p class="short">Cinematic VR film using Unreal Engine and Premiere Pro workflows.</p>
+                  <div class="card-actions"><button class="btn btn-sm detail">Details</button></div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <div id="panel-sde" class="panel" role="tabpanel" aria-labelledby="tab-sde" hidden>
+            <div class="projects-grid">
+
+              <article class="project-card sde" tabindex="0"
+                       data-title="Sneaker Comparison Analysis"
+                       data-tags="Python • Pandas • Matplotlib"
+                       data-desc="Exploratory analysis of Nike vs Adidas datasets. Built comparative visualizations and dashboards to surface pricing & trend insights."
+                       data-images="Project_images/SDC_1.png,Project_images/SDC_2.png,Project_images/SDC_3.png,Project_images/SDC_4.png,Project_images/SDC_5.png,Project_images/SDC_6.png">
+                <figure class="thumb">
+                  <div class="image-slider">
+                    <img alt="Sneaker Comparison" loading="lazy" src="Project_images/SDC_1.png,Project_images/SDC_2.png,Project_images/SDC_3.png,Project_images/SDC_4.png,Project_images/SDC_5.png,Project_images/SDC_6.png">
+                  </div>
+                </figure>
+                <div class="card-content">
+                  <h3>Sneaker Comparison Analysis</h3>
+                  <p class="short">Python - driven EDA and visualization for sneaker datasets.</p>
+                  <div class="card-actions"><button class="btn btn-sm detail">Details</button></div>
+                </div>
+              </article>
+
+              <article class="project-card sde" tabindex="0"
+                       data-title="Live ISS Satellite Tracker (May 2025)"
+                       data-tags="Python • APIs • Geospatial"
+                       data-desc="Python app that pulls real-time ISS telemetry and plots position & track on a world map visualization. Stored path history for animated replay."
+                       data-images="Project_images/ISS_1.png,Project_images/ISS_2.png,Project_images/ISS_3.png,Project_images/ISS_4.png">
+                <figure class="thumb">
+                  <div class="image-slider">
+                    <img alt="ISS Tracker" loading="lazy" src="Project_images/ISS_1.png,Project_images/ISS_2.png,Project_images/ISS_3.png,Project_images/ISS_4.png">
+                  </div>
+                </figure>
+                <div class="card-content">
+                  <h3>Live ISS Satellite Tracker - May 2025</h3>
+                  <p class="short">Real - time ISS tracking & visualization app (Python).</p>
+                  <div class="card-actions"><button class="btn btn-sm detail">Details</button></div>
+                </div>
+              </article>
+
+              <article class="project-card sde" tabindex="0"
+                       data-title="Python Projects Collection"
+                       data-tags="Python • Tkinter • Automation"
+                       data-desc="Collection of utility scripts, Tkinter GUIs, and automation tools used across coursework and hacks since 2022."
+                       data-images="Project_images/PP_1.png,Project_images/PP_2.png,Project_images/PP_3.png,Project_images/PP_4.png">
+                <figure class="thumb">
+                  <div class="image-slider">
+                    <img alt="Python Projects" loading="lazy" src="Project_images/PP_1.png,Project_images/PP_2.png,Project_images/PP_3.png,Project_images/PP_4.png">
+                  </div>
+                </figure>
+                <div class="card-content">
+                  <h3>Python Projects (2022 - Present)</h3>
+                  <p class="short">Utilities, automation, and small GUIs.</p>
+                  <div class="card-actions"><button class="btn btn-sm detail">Details</button></div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-left">
+              <strong>iHub-Drishti, IIT Jodhpur</strong>
+              <span class="when">May 2023 - Present</span>
+            </div>
+            <div class="timeline-right">
+              <h3>XR Developer Intern</h3>
+              <ul>
+                <li>Contributed to ISVC’24 research — technical analysis & documentation.</li>
+                <li>Applied C++ and algorithmic solutions to XR pipelines; optimized URP lighting & shaders.</li>
+                <li>Worked with NVIDIA Omniverse for collaborative 3D visualization workflows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-left">
+              <strong>AICTE — IDE BootCamp (SKIT, Jaipur)</strong>
+              <span class="when">Jan 2024</span>
+            </div>
+            <div class="timeline-right">
+              <h3>Attendee</h3>
+              <ul>
+                <li>Workshops on market trends, startup monetization, and pitching.</li>
+                <li>Co-led final investor pitch; applied design-thinking frameworks.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Skills & Achievements</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card skill-teal reveal">
+            <h4>Programming</h4>
+            <p>C • C++ • Python • Java • MySQL</p>
+            <small>System-level algorithms, optimization & debugging.</small>
+          </div>
+
+          <div class="skill-card skill-magenta reveal">
+            <h4>Technologies</h4>
+            <p>Unity • Unreal Engine • Shader Graph • URP • NVIDIA Omniverse</p>
+            <small>Real-time rendering, shader tuning, VFX graphs.</small>
+          </div>
+
+          <div class="skill-card skill-yellow reveal">
+            <h4>Tools</h4>
+            <p>Blender • Git • Data Tools • Project Management</p>
+            <small>3D authoring, version control, data visualization.</small>
+          </div>
+
+          <div class="skill-card skill-lavender reveal">
+            <h4>Achievements</h4>
+            <ul>
+              <li>Winner — Smart India Hackathon 2023 (SIH’23).</li>
+              <li>Best Startup of the Year 2024.</li>
+              <li>1st Runner Up — Pollution Hack 2.0.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap contact-wrap">
+        <div class="contact-left reveal">
+          <h2 class="section-title">Contact</h2>
+          <p class="lead">Want to collaborate on XR research, VFX, or build data tools? Hit me up.</p>
+          <ul class="contact-details">
+            <li><strong>Email:</strong> <a href="mailto:work.namansahai@gmail.com">work.namansahai@gmail.com</a></li>
+            <li><strong>Phone:</strong> +91-6367572005</li>
+            <li><strong>Location:</strong> Jodhpur, India</li>
+          </ul>
+          <div class="small-note">Resume & project repos available for review. Links in footer.</div>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal" novalidate action="https://formspree.io/f/mjkepwvn" method="POST">
+          <label class="field">
+            <span class="label">Name</span>
+            <input type="text" name="name" id="c_name" placeholder="Your full name" required>
+          </label>
+
+          <label class="field">
+            <span class="label">Email</span>
+            <input type="email" name="email" id="c_email" placeholder="you@domain.com" required>
+          </label>
+
+          <label class="field">
+            <span class="label">Message</span>
+            <textarea name="message" id="c_message" rows="6" placeholder="Tell me about your project..." required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="brand-footer"><span class="brand-mark">NS</span> <span>Naman Sahai</span></div>
+        <p class="muted">XR Developer • SDE • VFX • Data</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/NamanSahai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/naman-sahai" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="PortfolioResume_Naman_Sahai.pdf" download>Download Resume</a>
+      </div>
+      <div class="copyright">© <span id="year"></span> Naman Sahai</div>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="Close modal">✕</button>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <button id="backToTop" class="back-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
